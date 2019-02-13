@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>e1b7caf1-4693-47e7-af75-49d3fe206d7c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Services\" />
-    <Folder Include="Data\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
