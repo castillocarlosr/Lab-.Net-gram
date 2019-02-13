@@ -4,7 +4,7 @@
 
 @inject IWorkGram WorkGramManager
 
-@{ 
+@{
     var workGrams = await WorkGramManager.GetWorkGrams();
 }
 
@@ -17,4 +17,5 @@
     <p>@item.Comments</p>
 
     
+    <a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a>
 }
