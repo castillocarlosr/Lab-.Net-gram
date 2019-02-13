@@ -29,7 +29,7 @@ namespace NetGram.Data
                 new WorkGram
                 {
                     ID = 2,
-                    UserName = "UserDos",
+                    UserName = "User Doc",
                     Title = "Doctor in office",
                     URL = "pic002.jpg",
                     Comments = "Making you healthy",

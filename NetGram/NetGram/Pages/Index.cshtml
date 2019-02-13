@@ -1,3 +1,20 @@
 ﻿@page
 
-This is my pages index
+@using NetGram.Models.Interfaces
+
+@inject IWorkGram WorkGramManager
+
+@{ 
+    var workGrams = await WorkGramManager.GetWorkGrams();
+}
+
+@foreach (var item in workGrams)
+{
+    <h4>@item.UserName</h4>
+    <h6>@item.Title</h6>
+    <p>@item.URL</p>
+    <p>@item.Views</p>
+    <p>@item.Comments</p>
+
+    
+}

@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetGram.Data;
+using NetGram.Models.Interfaces;
+using NetGram.Models.Services;
 
 namespace NetGram
 {
@@ -33,6 +35,8 @@ namespace NetGram
             services.AddDbContext<AsyncInnDbContext>(options =>
             options.UseSqlServer(Configuration["ConnectionStrings:ProductionConnection"]));
             */
+
+            services.AddScoped<IWorkGram, WorkGramManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
