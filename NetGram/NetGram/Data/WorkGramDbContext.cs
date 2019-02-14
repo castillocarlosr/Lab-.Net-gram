@@ -22,7 +22,7 @@ namespace NetGram.Data
                     ID = 1,
                     UserName = "UserOne",
                     Title = "Friend Coding",
-                    URL = "codeFellow401.jpg",
+                    URL = "/assets/pic001.JPG",
                     Comments = "Hack the world",
                     Views = 1
                 },
@@ -31,7 +31,7 @@ namespace NetGram.Data
                     ID = 2,
                     UserName = "User Doc",
                     Title = "Doctor in office",
-                    URL = "pic002.jpg",
+                    URL = "/assets/pic002.jpg",
                     Comments = "Making you healthy",
                     Views = 1
                 },
@@ -40,7 +40,7 @@ namespace NetGram.Data
                     ID = 3,
                     UserName = "Mobile Lab",
                     Title = "Dog Coding",
-                    URL = "pic003.jpg",
+                    URL = "/assetst/pic003.JPG",
                     Comments = "I do odd jobs",
                     Views = 1
                 },
@@ -49,7 +49,7 @@ namespace NetGram.Data
                     ID = 4,
                     UserName = "OctoCat",
                     Title = "Teaching Code",
-                    URL = "pic004.jpg",
+                    URL = "/assets/pic004.jpg",
                     Comments = "I watch while you code.",
                     Views = 1
                 },
@@ -58,7 +58,7 @@ namespace NetGram.Data
                     ID = 5,
                     UserName = "SeattleChemist",
                     Title = "Hood Time",
-                    URL = "pic005.jpg",
+                    URL = "/assets/pic005.JPG",
                     Comments = "Such a reaction.",
                     Views = 1
                 },
@@ -67,7 +67,7 @@ namespace NetGram.Data
                     ID = 6,
                     UserName = "Hot Dog Champ",
                     Title = "Winning 1st",
-                    URL = "pic006.jpg",
+                    URL = "/assets/pic006.jpg",
                     Comments = "I get paid to eat hot dogs.",
                     Views = 1
                 }

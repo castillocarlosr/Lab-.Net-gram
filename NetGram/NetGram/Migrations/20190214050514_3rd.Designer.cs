@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetGram.Data;
 
 namespace NetGram.Migrations
 {
     [DbContext(typeof(WorkGramDbContext))]
-    partial class WorkGramDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190214050514_3rd")]
+    partial class _3rd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,7 @@ namespace NetGram.Migrations
                             ID = 1,
                             Comments = "Hack the world",
                             Title = "Friend Coding",
-                            URL = "/assets/pic001.JPG",
+                            URL = "~../wwwroot/pic001.JPG",
                             UserName = "UserOne",
                             Views = 1
                         },
@@ -53,7 +55,7 @@ namespace NetGram.Migrations
                             ID = 2,
                             Comments = "Making you healthy",
                             Title = "Doctor in office",
-                            URL = "/assets/pic002.jpg",
+                            URL = "../wwwroot/pic002.jpg",
                             UserName = "User Doc",
                             Views = 1
                         },
@@ -62,7 +64,7 @@ namespace NetGram.Migrations
                             ID = 3,
                             Comments = "I do odd jobs",
                             Title = "Dog Coding",
-                            URL = "/assetst/pic003.JPG",
+                            URL = "../../wwwroot/pic003.JPG",
                             UserName = "Mobile Lab",
                             Views = 1
                         },
@@ -71,7 +73,7 @@ namespace NetGram.Migrations
                             ID = 4,
                             Comments = "I watch while you code.",
                             Title = "Teaching Code",
-                            URL = "/assets/pic004.jpg",
+                            URL = "../wwwroot/pic004.jpg",
                             UserName = "OctoCat",
                             Views = 1
                         },
@@ -80,7 +82,7 @@ namespace NetGram.Migrations
                             ID = 5,
                             Comments = "Such a reaction.",
                             Title = "Hood Time",
-                            URL = "/assets/pic005.JPG",
+                            URL = "../wwwroot/pic005.JPG",
                             UserName = "SeattleChemist",
                             Views = 1
                         },
@@ -89,7 +91,7 @@ namespace NetGram.Migrations
                             ID = 6,
                             Comments = "I get paid to eat hot dogs.",
                             Title = "Winning 1st",
-                            URL = "/assets/pic006.jpg",
+                            URL = "../wwwroot/pic006.jpg",
                             UserName = "Hot Dog Champ",
                             Views = 1
                         });

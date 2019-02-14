@@ -8,6 +8,8 @@
     var workGrams = await WorkGramManager.GetWorkGrams();
 }
 
+<h2><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></h2>
+
 @foreach (var item in workGrams)
 {
     <h4>@item.UserName</h4>
@@ -16,9 +18,6 @@
     <p>@item.Views</p>
     <p>@item.Comments</p>
 
-
     <a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a>
 }
 
-
-<h4><a asp-page="/Work/Manage">ADD NEW WorkGrans</a></h4>
