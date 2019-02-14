@@ -1,0 +1,24 @@
+﻿@page
+
+@using NetGram.Models.Interfaces
+
+@inject IWorkGram WorkGramManager
+
+@{
+    var workGrams = await WorkGramManager.GetWorkGrams();
+}
+
+
+<h2><button type="button" class="btn btn-outline-primary"><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></button></h2>
+
+@foreach (var item in workGrams)
+{
+    <button type="button" class="btn btn-outline-success"><a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a></button>
+    <h6>@item.Title</h6>
+    <p>@item.URL</p>
+    <p>@item.Views</p>
+    <p>@item.Comments</p>
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
