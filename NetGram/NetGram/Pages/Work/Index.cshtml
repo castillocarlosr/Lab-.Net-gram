@@ -1,6 +1,7 @@
 ﻿@page "{id}"
 @model NetGram.Pages.Work.IndexModel
 @{
+
 }
 
 <div>
@@ -23,3 +24,5 @@
     <label asp-for="WorkGram.Comments"></label>
     <label asp-for="WorkGram.Comments">@Model.WorkGram.Comments</label>
 </div>
+
+<a asp-page="/Work/Manage" asp-route-id="@Model.WorkGram.ID">Edit</a>

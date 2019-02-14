@@ -1,8 +1,34 @@
-﻿@page "{id}"
+﻿@page "{id?}"
 @model NetGram.Pages.Work.ManageModel
 @{
     ViewData["Title"] = "Manage";
 }
 
 <h1>Manage</h1>
+<form method="post">
+    <label asp-for="WorkGram.UserName"></label>
+    <input asp-for="WorkGram.UserName" />
+
+    <label asp-for="WorkGram.Title"></label>
+    <input asp-for="WorkGram.Title" />
+
+    <label asp-for="WorkGram.URL"></label>
+    <input asp-for="WorkGram.URL" />
+
+    <label asp-for="WorkGram.Views"></label>
+    <input asp-for="WorkGram.Views" />
+
+    <label asp-for="WorkGram.Comments"></label>
+    <textarea rows="4" asp-for="WorkGram.Comments"></textarea>
+
+    <button type="submit">SAVE</button>
+    <button type="submit" asp-page-handler="Delete">DELETE</button>
+    <!--
+    <asp:TemplateField ShowHeader="False">
+        <ItemTemplate>
+            <asp:LinkButton ID="LinkButton1" runat="server" CommandName="Delete" OnClientClick="return confirm('Are you sure you want to delete this entry?');">Delete </asp:LinkButton>
+        </ItemTemplate>
+    </asp:TemplateField>d>
+    -->
+</form>
 

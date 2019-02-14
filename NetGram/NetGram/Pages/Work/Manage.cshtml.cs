@@ -16,6 +16,9 @@ namespace NetGram.Pages.Work
         [FromRoute]
         public int? ID { get; set; }
 
+        [BindProperty]
+        public WorkGram WorkGram { get; set; }
+
         public ManageModel(IWorkGram workGram)
         {
             _workGram = workGram;
@@ -24,6 +27,27 @@ namespace NetGram.Pages.Work
         public async Task OnGet()
         {
             WorkGram = await _workGram.FindWorkGram(ID.GetValueOrDefault()) ?? new WorkGram();
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            var work = await _workGram.FindWorkGram(ID.GetValueOrDefault()) ?? new WorkGram();
+
+            work.UserName = WorkGram.UserName;
+            work.Title = WorkGram.Title;
+            work.URL = WorkGram.URL;
+            work.Views = WorkGram.Views;
+            work.Comments = WorkGram.Comments;
+
+            await _workGram.SaveAsync(work);
+
+            return RedirectToPage("/Index");
+        }
+
+        public async Task<IActionResult> OnPostDelete()
+        {
+            await _workGram.DeleteAsync(ID.Value);
+            return RedirectToPage("/Index");
         }
     }
 }
