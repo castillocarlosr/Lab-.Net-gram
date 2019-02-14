@@ -67,7 +67,7 @@ namespace NetGram.Data
                     ID = 6,
                     UserName = "Hot Dog Champ",
                     Title = "Winning 1st",
-                    URL = "/assets/pic006.jpg",
+                    URL = "C:/Users/casti/coding/codeFellows/code401/Lab-.Net-gram/NetGram/NetGram/wwwroot/Assets/pic006.jpg",
                     Comments = "I get paid to eat hot dogs.",
                     Views = 1
                 }
