@@ -8,17 +8,33 @@
     var workGrams = await WorkGramManager.GetWorkGrams();
 }
 
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Styles/StyleSheet.css" rel="stylesheet" />
+    <title>Home Page</title>
+</head>
+<body>
+    <h1><button type="button" class="btn btn-outline-primary"><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></button></h1>
+    <h1></h1>
+    <h2></h2>
 
-<h2><button type="button" class="btn btn-outline-primary"><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></button></h2>
+    @foreach (var item in workGrams)
+    {
+        <div>
+            <button type="button" class="btn btn-outline-success"><a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a></button>
+            <p>@item.Title</p>
+            <img src="@item.URL" alt="Image holder">
+            <p>Ratings: @item.Views</p>
+            <p>Description: @item.Comments</p>
+        </div>
+    }
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
 
-@foreach (var item in workGrams)
-{
-    <button type="button" class="btn btn-outline-success"><a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a></button>
-    <h6>@item.Title</h6>
-    <img src="@item.URL" alt="Image holder">
-    <p>@item.Views</p>
-    <p>@item.Comments</p>
-}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+

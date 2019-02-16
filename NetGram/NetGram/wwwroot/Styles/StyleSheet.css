@@ -1,14 +1,24 @@
-﻿body {
-    width: 85%;
-    margin: auto;
+﻿
+body {
+    background-color: #76d04b;
     text-align: center;
-    background-color: lavender;
+    width: 90%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-family: 'Arial Rounded MT';
     font-size: 22px;
     color: darkblue;
+    background-color:antiquewhite
+}
+h2{
+    font-display:block;
+    margin:auto;
+    color:brown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -20,6 +30,7 @@ a {
 li {
     display: run-in;
     padding: 10px;
+    background-color:aqua;
 }
 
 .create {
@@ -35,3 +46,18 @@ tr {
     border-bottom-width: thick;
     padding-bottom: 2em;
 }
+
+div{
+    padding: 8px;
+    margin-left:auto;
+    margin-right:auto;
+    display: inline-block;
+}
+
+span{
+    font-family:'Californian FB';
+    color:blue;
+    font: italic;
+    background-color:blanchedalmond;
+}
+

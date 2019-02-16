@@ -21,73 +21,73 @@ namespace NetGram.Data
                 new WorkGram
                 {
                     ID = 1,
-                    UserName = "UserOne",
-                    Title = "Friend Coding",
-                    URL = "/assets/pic001.JPG",
-                    Comments = "Hack the world",
+                    UserName = "User Holder",
+                    Title = "Some Title",
+                    URL = "https://via.placeholder.com/150",
+                    Comments = "ROAR",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 2,
-                    UserName = "User Doc",
-                    Title = "Doctor in office",
-                    URL = "../assets/pic002.jpg",
-                    Comments = "Making you healthy",
+                    UserName = "UserOne",
+                    Title = "Friend Coding",
+                    URL = "https://via.placeholder.com/450",
+                    Comments = "Hack the world",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 3,
-                    UserName = "Mobile Lab",
-                    Title = "Dog Coding",
-                    URL = "../../assetst/pic003.JPG",
-                    Comments = "I do odd jobs",
+                    UserName = "User Doc",
+                    Title = "Doctor in office",
+                    URL = "https://via.placeholder.com/250",
+                    Comments = "Making you healthy",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 4,
-                    UserName = "OctoCat",
-                    Title = "Teaching Code",
-                    URL = "assets/pic004.jpg",
-                    Comments = "I watch while you code.",
+                    UserName = "Mobile Lab",
+                    Title = "Dog Coding",
+                    URL = "https://via.placeholder.com/450",
+                    Comments = "I do odd jobs",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 5,
-                    UserName = "SeattleChemist",
-                    Title = "Hood Time",
-                    URL = "pic005.JPG",
-                    Comments = "Such a reaction.",
+                    UserName = "OctoCat",
+                    Title = "Teaching Code",
+                    URL = "https://via.placeholder.com/400",
+                    Comments = "I watch while you code.",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 6,
-                    UserName = "Hot Dog Champ",
-                    Title = "Winning 1st",
-                    URL = "https://via.placeholder.com/150/0000FF/808080 ?Text=Place Holder",
-                    Comments = "I get paid to eat hot dogs.",
+                    UserName = "SeattleChemist",
+                    Title = "Hood Time",
+                    URL = "https://via.placeholder.com/350",
+                    Comments = "Such a reaction.",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 7,
-                    UserName = "number 7",
-                    Title = "Losing 1st",
-                    URL = "https://via.placeholder.com/150",
-                    Comments = "7th place",
+                    UserName = "Hot Dog Champ",
+                    Title = "Winning 1st",
+                    URL = "https://via.placeholder.com/150/0000FF/808080?Text=!PlaceHolder!",
+                    Comments = "I get paid to eat hot dogs.",
                     Views = 1
                 },
                 new WorkGram
                 {
                     ID = 8,
-                    UserName = "Dino",
-                    Title = "Winning always",
-                    URL = "pic006.JPG",
-                    Comments = "ROAR.",
+                    UserName = "number 8",
+                    Title = "Losing 1st",
+                    URL = "https://via.placeholder.com/250",
+                    Comments = "7th place",
                     Views = 1
                 }
                 );
