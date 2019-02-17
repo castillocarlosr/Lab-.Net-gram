@@ -13,27 +13,29 @@
     <title>Manage EDIT</title>
 </head>
 <body>
-    <h1>Manage your post here.</h1>
+    <h1>Add a new post here.</h1>
+    <h3>Show off your post about work activites.</h3>
 
+    <p> Maybe you're a dog walker, forest ranger, or candy tester.  Share pictures of what your work is like.</p>
     <h2><button type="button" class="btn btn-outline-primary"><a asp-page="../Index">Back Home</a></button></h2>
 
     <form method="post" enctype="multipart/form-data">
         <div>
             <label asp-for="Image"></label>
             <input asp-for="Image" type="file" />
-        
+
             <label asp-for="WorkGram.UserName"></label>
             <input asp-for="WorkGram.UserName" />
-        
+
             <label asp-for="WorkGram.Title"></label>
             <input asp-for="WorkGram.Title" />
-        
-            <label asp-for="WorkGram.URL"></label>
-            <input asp-for="WorkGram.URL" />
-        
+
+            <!--<label asp-for="WorkGram.URL"></label>
+            <input asp-for="WorkGram.URL" />-->
+
             <label asp-for="WorkGram.Views"></label>
             <input type="number" min="0" asp-for="WorkGram.Views" />
-        
+
             <label asp-for="WorkGram.Comments"></label>
             <textarea rows="4" asp-for="WorkGram.Comments"></textarea>
         </div>
@@ -43,7 +45,7 @@
         </div>
 
         <div>
-            <button type="submit" asp-page-handler="Delete" class="btn btn-danger">DELETE</button>
+            <button type="submit" asp-page-handler="Delete" class="btn btn-danger" onclick="alert('You are about to delete!')">DELETE</button>
         </div>
     </form>
 

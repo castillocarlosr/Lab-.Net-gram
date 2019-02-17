@@ -1,6 +1,6 @@
 ﻿
 body {
-    background-color: #76d04b;
+    background-image:url(../Assets/pic004.jpg);
     text-align: center;
     width: 90%;
     position: center;
@@ -10,9 +10,8 @@ body {
 
 h1, h3, h4, h5, h6 {
     font-family: 'Arial Rounded MT';
-    font-size: 22px;
     color: darkblue;
-    background-color:antiquewhite
+    
 }
 h2{
     font-display:block;
@@ -59,5 +58,43 @@ span{
     color:blue;
     font: italic;
     background-color:blanchedalmond;
+}
+
+#container {
+    width: 344px;
+    height: 344px;
+}
+
+#container img {
+    width: 100%;
+}
+#user i{
+    font-style: italic;
+    color: black;
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#description i{
+    font-style: italic;
+    color: black;
+    font-family: Arial;
+}
+
+.manage {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 15%;
+    border: 2px solid green;
+    padding-bottom: 10px;
+}
+
+.welcome {
+    margin-left: 5em;
+    margin-right: auto;
+    display: flex;
+    width: 66%;
+    margin-bottom: 15px;
 }
 

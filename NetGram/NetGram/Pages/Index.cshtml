@@ -15,18 +15,33 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1><button type="button" class="btn btn-outline-primary"><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></button></h1>
-    <h1></h1>
-    <h2></h2>
+    <div>
+        <h1 class="welcome">Welcome to the world of</h1>
+        <h1 class="welcome">"Work Grams"!</h1>
+        <h5 class="welcome">A place to show what your work is like.</h5>
+        <h5 class="welcome">A picture is worth a thousand words.  </h5>
+        <h5 class="welcome">Don't just say what you do at work.</h5>
+        <h4 class="welcome">Show them!</h4>
+    </div>
+
+    <div class="manage">
+        <h1><button type="button" class="btn btn-outline-primary"><a asp-page="/Work/Manage">ADD NEW Work-Grams</a></button></h1>
+        <h1></h1>
+        <h2></h2>
+    </div>
 
     @foreach (var item in workGrams)
     {
-        <div>
-            <button type="button" class="btn btn-outline-success"><a asp-page="/Work/Index" asp-route-id="@item.ID">@item.UserName</a></button>
-            <p>@item.Title</p>
-            <img src="@item.URL" alt="Image holder">
-            <p>Ratings: @item.Views</p>
-            <p>Description: @item.Comments</p>
+        <div class="card" style="width: 24rem;">
+            <button type="button" class="btn btn-outline-success"><a asp-page="/Work/Index" asp-route-id="@item.ID"><i id="user">User:</i> @item.UserName</a></button>
+        
+            <img src="@item.URL" alt="Image holder" class="card-img-top">
+        
+        <div class="card-body">
+            <h6 class="card-title">@item.Title</h6>
+            <p class="card-text">Ratings: @item.Views UpVotes!</p>
+            <p class="card-text">Description:<i id="description"> @item.Comments</i></p>
+        </div>
         </div>
     }
     

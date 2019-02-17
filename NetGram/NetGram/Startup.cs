@@ -31,17 +31,13 @@ namespace NetGram
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            /*
+            
             services.AddDbContext<WorkGramDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            */
+            /*
             services.AddDbContext<WorkGramDbContext>(options =>
             options.UseSqlServer(Configuration["ConnectionStrings:ProductionConnection"]));
-            
-            //services.AddDbContext<WorkGramDbContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("ProductionConnection")));
-
-
+            */
             services.AddScoped<IWorkGram, WorkGramManager>();
         }
 

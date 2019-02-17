@@ -16,8 +16,11 @@ namespace NetGram.Models.Utilities
 
         public Blob(IConfiguration configuration)
         {
-            CloudStorageAccount = CloudStorageAccount.Parse(configuration["ConnectionStrings:BlobConnectionString"]);
-            //CloudStorageAccount = CloudStorageAccount.Parse(configuration["BlobConnectionString"]);
+            //Connection when using Azure deployment
+            //CloudStorageAccount = CloudStorageAccount.Parse(configuration["ConnectionStrings:BlobConnectionString"]);
+
+            //Connection when using local connection strings.  Local Computer.
+            CloudStorageAccount = CloudStorageAccount.Parse(configuration["BlobConnectionString"]);
             CloudBlobClient = CloudStorageAccount.CreateCloudBlobClient();
         }
 
