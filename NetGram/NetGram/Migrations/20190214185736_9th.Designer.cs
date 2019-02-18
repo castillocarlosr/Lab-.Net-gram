@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetGram.Data;
 
 namespace NetGram.Migrations
 {
     [DbContext(typeof(WorkGramDbContext))]
-    partial class WorkGramDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190214185736_9th")]
+    partial class _9th
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,7 +56,7 @@ namespace NetGram.Migrations
                             ID = 2,
                             Comments = "Hack the world",
                             Title = "Friend Coding",
-                            URL = "https://via.placeholder.com/450",
+                            URL = "/Assets/pic001.JPG",
                             UserName = "UserOne",
                             Views = 1
                         },
@@ -63,7 +65,7 @@ namespace NetGram.Migrations
                             ID = 3,
                             Comments = "Making you healthy",
                             Title = "Doctor in office",
-                            URL = "https://via.placeholder.com/250",
+                            URL = "../Assets/pic002.jpg",
                             UserName = "User Doc",
                             Views = 1
                         },
@@ -72,7 +74,7 @@ namespace NetGram.Migrations
                             ID = 4,
                             Comments = "I do odd jobs",
                             Title = "Dog Coding",
-                            URL = "https://via.placeholder.com/450",
+                            URL = "../../Assets/pic003.JPG",
                             UserName = "Mobile Lab",
                             Views = 1
                         },
@@ -81,7 +83,7 @@ namespace NetGram.Migrations
                             ID = 5,
                             Comments = "I watch while you code.",
                             Title = "Teaching Code",
-                            URL = "https://via.placeholder.com/400",
+                            URL = "Assets/pic004.jpg",
                             UserName = "OctoCat",
                             Views = 1
                         },
@@ -90,7 +92,7 @@ namespace NetGram.Migrations
                             ID = 6,
                             Comments = "Such a reaction.",
                             Title = "Hood Time",
-                            URL = "https://via.placeholder.com/350",
+                            URL = "pic006.jpg",
                             UserName = "SeattleChemist",
                             Views = 1
                         },

@@ -4,30 +4,41 @@
 
 }
 
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Styles/StyleSheet.css" rel="stylesheet" />
+    <title>Manage Main Page</title>
+</head>
+<body>
+    <a asp-action="Index">Back Home maybe</a>
+    <h2><button type="button" class="btn btn-dark"><a asp-page="../Index">Back Home</a></button></h2>
+
+    <img src="@Model.WorkGram.URL" />
+
+    <div>
+        <b><label asp-for="WorkGram.UserName"></label></b>
+        <label asp-for="WorkGram.UserName">@Model.WorkGram.UserName</label>
+    
+        <i><label asp-for="WorkGram.Title">User: </label></i>
+        <label asp-for="WorkGram.Title">@Model.WorkGram.Title</label>
+    
+        <label asp-for="WorkGram.URL"></label>
+        <label asp-for="WorkGram.URL">@Model.WorkGram.URL</label>
+    
+        <label asp-for="WorkGram.Views">Views: </label>
+        <label asp-for="WorkGram.Views">Views: @Model.WorkGram.Views</label>
+    
+        <label asp-for="WorkGram.Comments">Comments: </label>
+        <label asp-for="WorkGram.Comments">Comments @Model.WorkGram.Comments</label>
+    </div>
+
+    <button type="button" class="btn btn-light"><a asp-page="/Work/Manage" asp-route-id="@Model.WorkGram.ID">Edit</a></button>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
 
 
-<div>
-    <label asp-for="WorkGram.UserName"></label>
-    <label asp-for="WorkGram.UserName">@Model.WorkGram.UserName</label>
-</div>
-<div>
-    <label asp-for="WorkGram.Title"></label>
-    <label asp-for="WorkGram.Title">@Model.WorkGram.Title</label>
-</div>
-<div>
-    <label asp-for="WorkGram.URL"></label>
-    <label asp-for="WorkGram.URL">@Model.WorkGram.URL</label>
-</div>
-<div>
-    <label asp-for="WorkGram.Views"></label>
-    <label asp-for="WorkGram.Views">@Model.WorkGram.Views</label>
-</div>
-<div>
-    <label asp-for="WorkGram.Comments"></label>
-    <label asp-for="WorkGram.Comments">@Model.WorkGram.Comments</label>
-</div>
-
-<button type="button" class="btn btn-light"><a asp-page="/Work/Manage" asp-route-id="@Model.WorkGram.ID">Edit</a></button>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

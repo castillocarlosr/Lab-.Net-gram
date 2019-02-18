@@ -1,14 +1,23 @@
-﻿body {
-    width: 85%;
-    margin: auto;
+﻿
+body {
+    background-image:url(../Assets/pic004.jpg);
     text-align: center;
-    background-color: lavender;
+    width: 90%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-family: 'Arial Rounded MT';
-    font-size: 22px;
     color: darkblue;
+    
+}
+h2{
+    font-display:block;
+    margin:auto;
+    color:brown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -20,6 +29,7 @@ a {
 li {
     display: run-in;
     padding: 10px;
+    background-color:aqua;
 }
 
 .create {
@@ -35,3 +45,78 @@ tr {
     border-bottom-width: thick;
     padding-bottom: 2em;
 }
+
+div{
+    padding: 8px;
+    margin-left:auto;
+    margin-right:auto;
+    display: inline-block;
+}
+
+span{
+    font-family:'Californian FB';
+    color:blue;
+    font: italic;
+    background-color:blanchedalmond;
+}
+
+#container {
+    width: 344px;
+    height: 344px;
+}
+
+#container img {
+    width: 100%;
+}
+#user i{
+    font-style: italic;
+    color: black;
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#description i{
+    font-style: italic;
+    color: black;
+    font-family: Arial;
+}
+
+@media screen and (max-width: 644px){
+    .manage1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: 95%;
+        background-color: azure;
+        color: darkblue;
+        margin-bottom: unset;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 645px){
+    .manage1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 85%;
+        font-display:block;
+        background-color: azure;
+        color: darkblue;
+        margin-bottom: unset;
+        padding-bottom: 40px;
+        resize: both;
+        overflow: auto;
+    }
+}
+
+.manage2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 15%;
+    border: 2px solid green;
+    padding-bottom: 10px;
+}
+
+

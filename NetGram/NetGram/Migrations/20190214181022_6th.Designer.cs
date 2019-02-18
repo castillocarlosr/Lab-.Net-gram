@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetGram.Data;
 
 namespace NetGram.Migrations
 {
     [DbContext(typeof(WorkGramDbContext))]
-    partial class WorkGramDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190214181022_6th")]
+    partial class _6th
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +32,7 @@ namespace NetGram.Migrations
 
                     b.Property<string>("URL");
 
-                    b.Property<string>("UserName")
-                        .IsRequired();
+                    b.Property<string>("UserName");
 
                     b.Property<int>("Views");
 
@@ -43,73 +44,73 @@ namespace NetGram.Migrations
                         new
                         {
                             ID = 1,
-                            Comments = "ROAR",
-                            Title = "Some Title",
-                            URL = "https://via.placeholder.com/150",
-                            UserName = "User Holder",
-                            Views = 1
-                        },
-                        new
-                        {
-                            ID = 2,
                             Comments = "Hack the world",
                             Title = "Friend Coding",
-                            URL = "https://via.placeholder.com/450",
+                            URL = "/assets/pic001.JPG",
                             UserName = "UserOne",
                             Views = 1
                         },
                         new
                         {
-                            ID = 3,
+                            ID = 2,
                             Comments = "Making you healthy",
                             Title = "Doctor in office",
-                            URL = "https://via.placeholder.com/250",
+                            URL = "../assets/pic002.jpg",
                             UserName = "User Doc",
                             Views = 1
                         },
                         new
                         {
-                            ID = 4,
+                            ID = 3,
                             Comments = "I do odd jobs",
                             Title = "Dog Coding",
-                            URL = "https://via.placeholder.com/450",
+                            URL = "../../assetst/pic003.JPG",
                             UserName = "Mobile Lab",
                             Views = 1
                         },
                         new
                         {
-                            ID = 5,
+                            ID = 4,
                             Comments = "I watch while you code.",
                             Title = "Teaching Code",
-                            URL = "https://via.placeholder.com/400",
+                            URL = "assets/pic004.jpg",
                             UserName = "OctoCat",
                             Views = 1
                         },
                         new
                         {
-                            ID = 6,
+                            ID = 5,
                             Comments = "Such a reaction.",
                             Title = "Hood Time",
-                            URL = "https://via.placeholder.com/350",
+                            URL = "pic005.JPG",
                             UserName = "SeattleChemist",
                             Views = 1
                         },
                         new
                         {
-                            ID = 7,
+                            ID = 6,
                             Comments = "I get paid to eat hot dogs.",
                             Title = "Winning 1st",
-                            URL = "https://via.placeholder.com/150/0000FF/808080?Text=!PlaceHolder!",
+                            URL = "https://via.placeholder.com/150/0000FF/808080 ?Text=Place Holder",
                             UserName = "Hot Dog Champ",
                             Views = 1
                         },
                         new
                         {
-                            ID = 8,
+                            ID = 7,
                             Comments = "7th place",
                             Title = "Losing 1st",
-                            URL = "https://via.placeholder.com/250",
-                            UserName = "number 8",
+                            URL = "https://via.placeholder.com/150",
+                            UserName = "number 7",
+                            Views = 1
+                        },
+                        new
+                        {
+                            ID = 8,
+                            Comments = "ROAR.",
+                            Title = "Winning always",
+                            URL = "pic006.JPG",
+                            UserName = "Dino",
                             Views = 1
                         });
                 });
