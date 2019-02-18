@@ -21,6 +21,7 @@ namespace NetGram.Models.Utilities
 
             //Connection when using local connection strings.  Local Computer.
             CloudStorageAccount = CloudStorageAccount.Parse(configuration["BlobConnectionString"]);
+
             CloudBlobClient = CloudStorageAccount.CreateCloudBlobClient();
         }
 
