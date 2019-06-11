@@ -11,9 +11,7 @@ This is my attempt at creating a Razor Pages from ASP.NET Core MVC and Blob stor
  A fun photo sharing social networking service focusing on your daily jobs and career.
 
 ### How to run the program:
-```
-Use the link below &dArr; to find a deployed version on an Azure server.
-```
+Use the link below &dArr; to find a deployed version on an Azure server.<br>
 [https://netgramworkgram.azurewebsites.net](https://netgramworkgram.azurewebsites.net)
 
 ```
