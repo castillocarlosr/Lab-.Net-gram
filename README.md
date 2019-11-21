@@ -41,7 +41,8 @@ Below are screen shots of what this should look like.
 
 ```
 Started on February 14, 2019
-Last update on February 18, 2019
+Last major update on February 18, 2019
+Last minor update on November 21, 2019
 ```
 
 --------------------------------------------------------------------------------------------------------------------------
